@@ -1,6 +1,6 @@
 @extends('layouts.test')
 @section('title', 'Pravila igre')
-@section('header', 'Frequently asked questions')
+@section('header', 'Pravila igre')
 
 @section('content')
 <div class="min-height-200px">
