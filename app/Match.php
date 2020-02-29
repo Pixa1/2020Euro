@@ -20,7 +20,7 @@ class Match extends Model
     public function started()
     {
         //if ($this->Date < Carbon::now()->addHours(-1)){
-        if ($this->Date < Carbon::parse('2020-06-13 21:34')->addHours(-1)){
+        if ($this->Date < Carbon::parse('2020-06-11 21:34')->addHours(-1)){
             return "True";
         }
         

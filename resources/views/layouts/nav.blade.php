@@ -37,7 +37,7 @@
 					</div>
 				@endguest
 				</div>
-			</div>
+			</div>	
 		</div>
 	</div>		
 	<div class="left-side-bar">

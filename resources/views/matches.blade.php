@@ -30,7 +30,7 @@
                             <span title="RUS" class="tfl flag flag-{{$match->Home_Team}} d-none d-xl-block"></span>
                         </div>
                         <div class="p-2 align-self-center col-4 col-lg-1">
-                            <h5 class="text-center mscore">{{$match->bet->home_score ?? '0'}}-{{$match->bet->away_score ?? '0'}}</h5>
+                            <h5 class="text-center mscore">{{$match->matchresult->home_score ?? '0'}}-{{$match->matchresult->away_score ?? '0'}}</h5>
                         </div>
                         <div class="media align-self-center col-4">
                             <span title="RUS" class="tfr flag flag-{{str_replace(' ', '', $match->Away_Team)}} d-none d-xl-block"></span>
