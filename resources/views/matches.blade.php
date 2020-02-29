@@ -25,17 +25,17 @@
                     <div class="row align-self-center">
                         <div class="media  align-self-center col-4">
                             <div class="media-body align-self-center">
-                            <p class="mt-0 mb-1 text-right pl-2 pr-lg-4 text-wrap">{{$match->Home_Team}}</p>
+                            <p class="mt-0 mb-1 text-right pl-2 pr-lg-4 pr-4 text-wrap d-none d-sm-block">{{$match->Home_Team}}</p>
                             </div>
-                            <span title="RUS" class="tfl flag flag-{{$match->Home_Team}} d-none d-xl-block"></span>
+                            <span title="RUS" class="tfl flag flag-{{$match->Home_Team}} "></span>
                         </div>
-                        <div class="p-2 align-self-center col-4 col-lg-1">
+                        <div class="p-2 align-self-center col-3 col-lg-1">
                             <h5 class="text-center mscore">{{$match->matchresult->home_score ?? '0'}}-{{$match->matchresult->away_score ?? '0'}}</h5>
                         </div>
                         <div class="media align-self-center col-4">
-                            <span title="RUS" class="tfr flag flag-{{str_replace(' ', '', $match->Away_Team)}} d-none d-xl-block"></span>
+                            <span title="RUS" class="tfr flag flag-{{str_replace(' ', '', $match->Away_Team)}} "></span>
                             <div class="media-body align-self-center">
-                                <p class="mt-0 mb-1 pl-lg-4 text-wrap">{{$match->Away_Team}}</p>
+                                <p class="mt-0 mb-1 pl-lg-4 pl-4 text-wrap d-none d-sm-block">{{$match->Away_Team}}</p>
                             </div>
                         </div>
                     </div>

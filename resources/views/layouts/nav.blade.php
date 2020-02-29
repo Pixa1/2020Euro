@@ -63,6 +63,12 @@
                             <!-- <i class="icon-copy fa fa-bar-chart" aria-hidden="true"></i> -->
 						</a>
 					</li>
+					<li>
+						<a href="/faq" class="dropdown-toggle no-arrow">
+							<i class="icon-copy fa fa-question-circle-o" aria-hidden="true"></i>
+                            <span class="mtext">Pravila</span>
+						</a>
+					</li>
 					
 				</ul>
 			</div>
