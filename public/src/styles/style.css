@@ -18717,6 +18717,8 @@ textarea.form-control {
 .forgot-password {
   text-align: right; }
 
+.register {
+  text-align: left; }
 /*==============================================================
 	Login End
 ==============================================================*/
@@ -20344,6 +20346,8 @@ textarea.form-control {
   .page-header {
     margin-bottom: 30px; }
   .forgot-password {
+    text-align: center; }
+  .register {
     text-align: center; }
   .ionicons-list li {
     width: 16.60%; }

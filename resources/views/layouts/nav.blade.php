@@ -14,9 +14,9 @@
 			<div class="user-info-dropdown">
 				<div class="dropdown">
 				@guest
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-							</li>
+                            
+					<a class="nav-link pt-3" href="{{ route('login') }}">{{ __('Prijava') }}</a>
+							
 				@else
 					<a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown">
 						<span class="user-icon"><i class="fa fa-user-o"></i></span>
@@ -35,8 +35,8 @@
                                         @csrf
 						</form>
 					</div>
-				</div>
 				@endguest
+				</div>
 			</div>
 		</div>
 	</div>		

@@ -21,7 +21,7 @@ Auth::routes();
 }); */
 
 Route::get('/','MatchResultController@index');
-//Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'MatchResultController@index');
 Route::get('/matches','MatchResultController@index')->name('home');
 Route::get('/mybets','MatchController@index')->middleware('auth');
 Route::post('/submitbets','MatchController@store')->middleware('auth');

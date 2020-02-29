@@ -46,13 +46,18 @@
 								<input class="btn btn-outline-primary btn-lg btn-block" type="submit" value="Sign In">
                             -->
                             <button type="submit" class="btn btn-outline-primary btn-lg btn-block">
-                                    {{ __('Sign In') }}
+                                    {{ __('Prijava') }}
                                 </button>
 							<!-- <a class="btn btn-outline-primary btn-lg btn-block" href="index.php">Sign In</a> -->
 						</div>
 					</div>
 					<div class="col-sm-6">
-						<div class="forgot-password padding-top-10"><a href="forgot-password.php">Forgot Password</a></div>
+						<div class="forgot-password"><a href="{{ route('password.request') }}">Zaboravljena lozinka</a></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+					<div class="register pl-1">Nemaš račun? <a href="/register">Registriraj se</a></div>
 					</div>
 				</div>
 			</form>

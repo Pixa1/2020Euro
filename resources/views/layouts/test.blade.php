@@ -8,6 +8,7 @@
 
 	<!-- Site favicon -->
 	<!-- <link rel="shortcut icon" href="images/favicon.ico"> -->
+<!-- 	<link href="{{ asset('css/app.css') }}" rel="stylesheet"> -->
     <script src="{{ asset('js/app.js') }}"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 	<script src="js/maintainscroll.min.js"></script>
