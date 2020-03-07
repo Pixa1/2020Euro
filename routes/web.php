@@ -41,4 +41,3 @@ Route::get('/test2',function(){
 });
 
 Route::get('/payment/verify','HomeController@paymentVerify')->name('payment.notice');
-//asd//

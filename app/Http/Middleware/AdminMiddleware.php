@@ -15,7 +15,7 @@ class AdminMiddleware
      */
     public function handle($request, Closure $next)
     {
-        if($request->user() && $request->user()->id != '5')
+        if($request->user() && $request->user()->role != 'Admin')
         {
             return redirect('/matches')->with([
                 'message' => 'Samo za administratore',

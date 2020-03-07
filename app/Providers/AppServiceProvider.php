@@ -27,7 +27,7 @@ class AppServiceProvider extends ServiceProvider
     {
         //
         \Blade::if('admin', function () {
-            return auth()->check() && auth()->user()->id == '5';
+            return auth()->check() && auth()->user()->role == 'Admin';
         });
 
     }
