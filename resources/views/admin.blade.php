@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.test')
 @section('title', 'Admin Content - Match Results')
 @section('content')
 

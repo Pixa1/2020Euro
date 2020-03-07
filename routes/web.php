@@ -15,7 +15,7 @@
 
 
 
-Auth::routes();
+Auth::routes(['verify' => true]);
 /* Route::get('/', function () {
     return view('matches')->middleware('auth');
 }); */
@@ -23,12 +23,12 @@ Auth::routes();
 Route::get('/','MatchResultController@index');
 Route::get('/home', 'MatchResultController@index');
 Route::get('/matches','MatchResultController@index')->name('home');
-Route::get('/mybets','MatchController@index')->middleware('auth');
+Route::get('/mybets','MatchController@index')->middleware(['auth','verified','payment']);
 Route::post('/submitbets','MatchController@store')->middleware('auth');
 
 Route::get('/standings','UserPointController@index');
 
-Route::get('/admin','MatchResultController@admin')->middleware('auth')->name('admin');
+Route::get('/admin','MatchResultController@admin')->middleware(['auth','admin'])->name('admin');
 Route::post('/submitresult','MatchResultController@store')->middleware('auth');
 
 Route::get('/test','BetController@store');
@@ -39,3 +39,5 @@ Route::get('/profile','UserPointController@show')->middleware('auth');;
 Route::get('/test2',function(){
     return view('test');
 });
+
+Route::get('/payment/verify','HomeController@paymentVerify')->name('payment.notice');

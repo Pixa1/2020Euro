@@ -69,8 +69,16 @@
                             <span class="mtext">Pravila</span>
 						</a>
 					</li>
-					
+					@admin
+					<li>
+						<a href="/admin" class="dropdown-toggle no-arrow">
+							<i class="icon-copy fa fa-sliders" aria-hidden="true"></i>
+                            <span class="mtext">Administracija</span>
+						</a>
+					</li>
+					@endadmin
 				</ul>
 			</div>
 		</div>
 	</div>	
+	

@@ -38,6 +38,13 @@
 						<span class="input-group-text"><i class="fa fa-lock" aria-hidden="true"></i></span>
 					</div>
 				</div>
+				<div class="form-check input-group">
+					<input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+
+					<label class="form-check-label" for="remember">
+						{{ __('Zapamti me') }}
+					</label>
+				</div>
 				<div class="row">
 					<div class="col-sm-6">
 						<div class="input-group">
