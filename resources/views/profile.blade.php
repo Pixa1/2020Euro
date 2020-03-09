@@ -59,6 +59,7 @@
 </div>
 <div class="pd-20 bg-white border-radius-4 box-shadow mb-30">
     <div class="col-md-6 offset-md-3">
+    <p>Pregled utakmica</p>
         <table class="table table-bordered table-striped">
             <thead>
                 <tr>

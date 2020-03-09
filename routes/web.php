@@ -29,6 +29,7 @@ Route::post('/submitbets','MatchController@store')->middleware('auth');
 Route::get('/standings','UserPointController@index');
 
 Route::get('/admin','MatchResultController@admin')->middleware(['auth','admin'])->name('admin');
+Route::get('/users','UserController@index');
 Route::post('/submitresult','MatchResultController@store')->middleware('auth');
 
 Route::get('/test','BetController@store');

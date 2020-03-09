@@ -2,7 +2,7 @@
 		<div class="header-right">
 			<div class="brand-logo">
 				<a href="index.php">
-					<img src="src/images/logo-cropped.png" alt="" class="mobile-logo">
+					<img src="/src/images/logo-cropped.png" alt="" class="mobile-logo">
 				</a>
 			</div>
 			<div class="menu-icon">
@@ -23,9 +23,9 @@
 						<span class="user-name">{{Auth::user()->name}}</span>
 					</a>
 					<div class="dropdown-menu dropdown-menu-right">
-						<a class="dropdown-item" href="profile"><i class="fa fa-user-md" aria-hidden="true"></i> Profil</a>
+						<a class="dropdown-item" href="/profile"><i class="fa fa-user-md" aria-hidden="true"></i> Profil</a>
 						<!-- <a class="dropdown-item" href="profile.php"><i class="fa fa-cog" aria-hidden="true"></i> Setting</a> -->
-						<a class="dropdown-item" href="faq"><i class="fa fa-question" aria-hidden="true"></i> Pomoć</a>
+						<a class="dropdown-item" href="/faq"><i class="fa fa-question" aria-hidden="true"></i> Pomoć</a>
 						<a class="dropdown-item" href="{{ route('logout') }}" 
 							onclick="event.preventDefault();
 							document.getElementById('logout-form').submit();">
@@ -42,7 +42,7 @@
 	</div>		
 	<div class="left-side-bar">
 		<div class="brand-logo">
-			<img src="src/images/logo.png" alt="">
+			<img src="/src/images/logo.png" alt="">
 		</div>
 		<div class="menu-block customscroll">
 			<div class="sidebar-menu">
@@ -70,12 +70,37 @@
 						</a>
 					</li>
 					@admin
+					<div class="accordion" id="accordionExample">
+						
+							<div class="" id="headingOne">
+							<h5 class="mb-0">
+								
+								<a class="dropdown-toggle" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								<i class="icon-copy fa fa-sliders" aria-hidden="true"></i>Administracija
+								</a>
+							</h5>
+							</div>
+
+							<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+							
+							<ul class="">
+								<li>
+									<a href="/admin" class="dropdown-toggle no-arrow">Rezultati</a>
+								</li>
+								<li><a href="/users" class="dropdown-toggle no-arrow">Korisnici</a></li>
+							</ul>
+
+							</div>
+						
+					
+					</div>
+<!-- 					
 					<li>
 						<a href="/admin" class="dropdown-toggle no-arrow">
 							<i class="icon-copy fa fa-sliders" aria-hidden="true"></i>
                             <span class="mtext">Administracija</span>
 						</a>
-					</li>
+					</li> -->
 					@endadmin
 				</ul>
 			</div>

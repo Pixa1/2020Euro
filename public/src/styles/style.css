@@ -20343,8 +20343,8 @@ textarea.form-control {
     min-width: 300px; }
   .user-info-dropdown .dropdown-toggle .user-name {
     display: none; }
-  .page-header {
-    margin-bottom: 30px; }
+/*   .page-header {
+    margin-bottom: 30px; } */
   .forgot-password {
     text-align: center; }
   .register {
